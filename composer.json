@@ -1,0 +1,43 @@
+{
+    "name": "atomicnuclear/support",
+    "description": "The Nuclear Support package.",
+    "license": "MIT",
+    "homepage": "http://atomicframework.io",
+    "support": {
+        "issues": "https://github.com/atomicframework/framework/issues",
+        "source": "https://github.com/atomicframework/framework"
+    },
+    "authors": [
+        {
+            "name": "Mehmet Nuri Ozturk",
+            "email": "mehmeh@atomicframework.io"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "ext-mbstring": "*",
+        "atomicnuclear/contracts": "*",
+        "doctrine/inflector": "~1.0",
+        "paragonie/random_compat": "~1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nuclear\\Support\\": ""
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "5.3-dev"
+        }
+    },
+    "suggest": {
+        "atomicnuclear/filesystem": "Required to use the composer class (*).",
+        "jeremeamia/superclosure": "Required to be able to serialize closures (~2.2).",
+        "symfony/process": "Required to use the composer class (3.1.*).",
+        "symfony/var-dumper": "Required to use the dd function (3.1.*)."
+    },
+    "minimum-stability": "dev"
+}
